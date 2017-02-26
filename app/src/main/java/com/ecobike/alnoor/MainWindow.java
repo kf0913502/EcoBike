@@ -115,7 +115,7 @@ public class MainWindow extends AppCompatActivity {
                     try {
                         final BufferedReader reader = new BufferedReader(new InputStreamReader(BTS.getInputStream()));
                         String sensorRead = reader.readLine();
-                        if (sensorRead.charAt(0) == 's') {
+                        if (sensorRead != null && !sensorRead.equals("") && sensorRead.charAt(0) == 's') {
                             sensorRead = sensorRead.substring(1);
                             Log.v("bike", sensorRead);
                             sessionPoints += (int) (Math.abs(Float.parseFloat(sensorRead)) * 100);
@@ -123,7 +123,11 @@ public class MainWindow extends AppCompatActivity {
                         }
                     } catch (IOException e) {
                         e.printStackTrace();
+                    } catch (Exception e)
+                    {
+                        e.printStackTrace();
                     }
+
                 }
 
 
