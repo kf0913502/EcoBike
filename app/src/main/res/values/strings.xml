@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EcoBike</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="connect_failed">FAILED TO CONNECT</string>
+    <string name="find_barrier">Find Barrier</string>
+    <string name="no_barrier_found">NO BIKE FOUND</string>
+    <string name="connected">CONNECTED</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="not_connected">NOT CONNECTED</string>
+    <string name="finding_Barrier">Finding Barrier</string>
+    <string name="connecting">Connecting</string>
+    <string name="connectingUC">CONNECTING</string>
+</resources>
